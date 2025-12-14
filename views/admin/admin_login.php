@@ -5,10 +5,10 @@
 <div class="auth-logo">
 <img src="<?= $BASE_PATH ?>/assets/img/logo.png" alt="Logo" width="70">
 </div>
-<h2>Connexion Etudiant</h2>
-<p class="auth-subtitle">Accedez a votre espace etudiant.</p>
+<h2>Admin login</h2>
+<p class="auth-subtitle">Access your admin space.</p>
 <?php if (isset($_GET['success'])): ?>
-<div class="auth-alert success">Inscription reussie. Connectez-vous.</div>
+<div class="auth-alert success">Connection successful.</div>
 <?php endif; ?>
 
 <form action="<?= $BASE_PATH ?>/controllers/login_admin.php" method="POST">
@@ -33,7 +33,6 @@
 </form>
 
 <div class="auth-links">
-<a href="<?= $BASE_PATH ?>/views/public/register.php">Sign up</a>
 <a href="<?= $BASE_PATH ?>/views/admin/login.php">Return</a>
 </div>
 </div>

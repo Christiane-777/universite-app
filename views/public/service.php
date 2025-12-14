@@ -29,7 +29,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="bg-primary border-inner text-center text-white p-5">
-                        <h4 class="text-uppercase mb-3">BACHELOR</h4>
+                        <h4 class="text-uppercase mb-3">BACHELOR'S DEGREE</h4>
                         <p>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo amet tempor amet kasd lorem dolor ipsum</p>
                         <a class="text-uppercase text-dark" href="">Read More <i class="bi bi-arrow-right"></i></a>
                     </div>

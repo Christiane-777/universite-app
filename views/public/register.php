@@ -9,19 +9,19 @@ $filieres = $conn->query('SELECT * FROM filieres')->fetchAll(PDO::FETCH_ASSOC);
 <div class="auth-logo">
     <img src="<?= $BASE_PATH ?>/assets/img/logo.png" alt="Logo" width="70">
 </div>
-<h2>Inscription Etudiant</h2>
-<p class="auth-subtitle">Creez votre compte pour poursuivre votre dossier.</p>
+<h2>Student registration</h2>
+<p class="auth-subtitle">Log in to your account to continue your application.</p>
 
 <form class="auth-form two-col" action="<?= $BASE_PATH ?>/controllers/register.php" method="POST">
 <div class="auth-field">
-<label>Nom</label>
+<label>First name</label>
 <div class="input-shell">
 <input type="text" name="nom" placeholder="Nom" required>
 </div>
 </div>
 
 <div class="auth-field">
-<label>Prenom</label>
+<label>Last name</label>
 <div class="input-shell">
 <input type="text" name="prenom" placeholder="Prenom" required>
 </div>
@@ -36,45 +36,45 @@ $filieres = $conn->query('SELECT * FROM filieres')->fetchAll(PDO::FETCH_ASSOC);
 </div>
 
 <div class="auth-field">
-<label>Telephone</label>
+<label>Phone number</label>
 <div class="input-shell">
 <input type="text" name="telephone" placeholder="Numero de telephone">
 </div>
 </div>
 
 <div class="auth-field">
-<label>Date de naissance</label>
+<label>Date of birth</label>
 <div class="input-shell">
 <input type="date" name="date_naissance">
 </div>
 </div>
 
 <div class="auth-field">
-<label>Nationalite</label>
+<label>Nationality</label>
 <div class="input-shell">
 <input type="text" name="nationalite" placeholder="Nationalite" required>
 </div>
 </div>
 
 <div class="auth-field">
-<label>Ancienne ecole</label>
+<label>Former school</label>
 <div class="input-shell">
 <input type="text" name="ancien_ecole" placeholder="Etablissement precedent" required>
 </div>
 </div>
 
 <div class="auth-field">
-<label>Pays de residence</label>
+<label>Country of residence</label>
 <div class="input-shell">
 <input type="text" name="pays_residence" placeholder="Pays de residence" required>
 </div>
 </div>
 
 <div class="auth-field">
-<label>Niveau d'etude</label>
+<label>Level of study</label>
 <div class="input-shell">
 <select name="niveau_etude" required>
-<option value="">-- Selectionner --</option>
+<option value="">-- Select --</option>
 <?php for ($i = 1; $i <= 5; $i++): ?>
 <option value="<?= $i ?>"><?= $i ?></option>
 <?php endfor; ?>
@@ -86,7 +86,7 @@ $filieres = $conn->query('SELECT * FROM filieres')->fetchAll(PDO::FETCH_ASSOC);
 <label>Filiere</label>
 <div class="input-shell">
 <select name="filiere_id" required>
-<option value="">-- Choisir --</option>
+<option value="">-- Choose --</option>
 <?php foreach($filieres as $f): ?>
 <option value="<?= $f['id'] ?>"><?= htmlspecialchars($f['nom']) ?></option>
 <?php endforeach; ?>
@@ -95,7 +95,7 @@ $filieres = $conn->query('SELECT * FROM filieres')->fetchAll(PDO::FETCH_ASSOC);
 </div>
 
 <div class="auth-field">
-<label>Mot de passe</label>
+<label>Password</label>
 <div class="input-shell">
 <span class="input-icon">🔒</span>
 <input type="password" name="password" placeholder="********" required>
@@ -103,7 +103,7 @@ $filieres = $conn->query('SELECT * FROM filieres')->fetchAll(PDO::FETCH_ASSOC);
 </div>
 
 <div class="auth-field">
-<label>Confirmer le mot de passe</label>
+<label>Password confirmation</label>
 <div class="input-shell">
 <span class="input-icon">🔒</span>
 <input type="password" name="confirm_password" placeholder="********" required>
@@ -111,22 +111,22 @@ $filieres = $conn->query('SELECT * FROM filieres')->fetchAll(PDO::FETCH_ASSOC);
 </div>
 
 <div class="auth-field">
-<label>Nom du parent (optionnel)</label>
+<label>Parent's name (optionnal)</label>
 <div class="input-shell">
 <input type="text" name="parent_nom" placeholder="Nom et prenom du parent ou tuteur">
 </div>
 </div>
 
 <div class="auth-field">
-<label>Numero du parent (optionnel)</label>
+<label>Parent's number (optionnal)</label>
 <div class="input-shell">
 <input type="text" name="parent_contact" placeholder="Contact du parent ou tuteur">
 </div>
 </div>
 
 <div class="auth-actions">
-<button class="btn btn-auth" type="submit">S'inscrire</button>
-<a class="link-inline" href="<?= $BASE_PATH ?>/views/public/login.php">Deja inscrit ? Se connecter</a>
+<button class="btn btn-auth" type="submit">Register</button>
+<a class="link-inline" href="<?= $BASE_PATH ?>/views/public/login.php">Already registered, login </a>
 </div>
 </form>
 </div>

@@ -61,20 +61,8 @@
                     <h4 class="mb-4">Tempor erat elitr rebum clita. Diam dolor diam ipsum erat lorem sed stet labore lorem sit clita duo</h4>
                     <p class="mb-5">Tempor erat elitr at rebum at at clita. Diam dolor diam ipsum et tempor sit. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna dolore erat amet magna</p>
                     <div class="row g-5">
-                        <div class="col-sm-6">
-                            <div class="d-flex align-items-center justify-content-center bg-primary border-inner mb-4" style="width: 90px; height: 90px;">
-                                <i class="fa fa-heartbeat fa-2x text-white"></i>
-                            </div>
-                            <h4 class="text-uppercase">100% Healthy</h4>
-                            <p class="mb-0">Labore justo vero ipsum sit clita erat lorem magna clita nonumy dolor magna dolor vero</p>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="d-flex align-items-center justify-content-center bg-primary border-inner mb-4" style="width: 90px; height: 90px;">
-                                <i class="fa fa-award fa-2x text-white"></i>
-                            </div>
-                            <h4 class="text-uppercase">Award Winning</h4>
-                            <p class="mb-0">Labore justo vero ipsum sit clita erat lorem magna clita nonumy dolor magna dolor vero</p>
-                        </div>
+                        
+                        
                     </div>
                 </div>
             </div>
@@ -213,7 +201,7 @@
                                         <h4 class="bg-dark text-primary p-2 m-0"></h4>
                                     </div>
                                     <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
-                                        <h5 class="text-uppercase">BACHELOR</h5>
+                                        <h5 class="text-uppercase">BACHELOR'S DEGREE</h5>
                                         <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
                                     </div>
                                 </div>
@@ -225,7 +213,7 @@
                                         <h4 class="bg-dark text-primary p-2 m-0"></h4>
                                     </div>
                                     <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
-                                        <h5 class="text-uppercase">BACHELOR</h5>
+                                        <h5 class="text-uppercase">BACHELOR'S DEGREE</h5>
                                         <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
                                     </div>
                                 </div>
@@ -237,7 +225,7 @@
                                         <h4 class="bg-dark text-primary p-2 m-0"></h4>
                                     </div>
                                     <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
-                                        <h5 class="text-uppercase">BACHELOR</h5>
+                                        <h5 class="text-uppercase">BACHELOR'S DEGREE</h5>
                                         <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
                                     </div>
                                 </div>
@@ -249,7 +237,7 @@
                                         <h4 class="bg-dark text-primary p-2 m-0"></h4>
                                     </div>
                                     <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
-                                        <h5 class="text-uppercase">BACHELOR</h5>
+                                        <h5 class="text-uppercase">BACHELOR'S DEGREE</h5>
                                         <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
                                     </div>
                                 </div>
@@ -261,7 +249,7 @@
                                         <h4 class="bg-dark text-primary p-2 m-0"></h4>
                                     </div>
                                     <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
-                                        <h5 class="text-uppercase">BACHELOR</h5>
+                                        <h5 class="text-uppercase">BACHELOR'S DEGREE</h5>
                                         <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
                                     </div>
                                 </div>
@@ -273,7 +261,7 @@
                                         <h4 class="bg-dark text-primary p-2 m-0"></h4>
                                     </div>
                                     <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
-                                        <h5 class="text-uppercase">BACHELOR</h5>
+                                        <h5 class="text-uppercase">BACHELOR'S DEGREE</h5>
                                         <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
                                     </div>
                                 </div>

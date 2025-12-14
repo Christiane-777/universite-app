@@ -81,11 +81,11 @@ $BASE_PATH = 'http://localhost/universite-app';
                 <a href="<?= $BASE_PATH ?>/views/public/about.php" class="nav-item nav-link">About Us</a>
                 <a href="<?= $BASE_PATH ?>/views/public/menu.php" class="nav-item nav-link">Our programs</a>
                 <a href="<?= $BASE_PATH ?>/views/public/service.php" class="nav-item nav-link">Events</a>
-                <a href="<?= $BASE_PATH ?>/views/public/team.php" class="nav-item nav-link">Team members</a>
+                <a href="<?= $BASE_PATH ?>/views/public/team.php" class="nav-item nav-link">Team Members</a>
                 
-                <a href="<?= $BASE_PATH ?>/views/public/testimonial.php" class="nav-item nav-link">Students voice</a>
+                <a href="<?= $BASE_PATH ?>/views/public/testimonial.php" class="nav-item nav-link">Student's Voice</a>
                 <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Student Portal</a>
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Student's Portal</a>
                     <div class="dropdown-menu m-0">
                         <a href="<?= $BASE_PATH ?>/views/public/login.php" class="dropdown-item">Login</a>
                         <a href="<?= $BASE_PATH ?>/views/public/register.php" class="dropdown-item">Register</a>
