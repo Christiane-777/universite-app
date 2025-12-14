@@ -7,7 +7,7 @@ $db = new Database(); $conn = $db->connect();
 $id = isset($_GET['id']) ? (int)$_GET['id'] : 0;
 $stmt = $conn->prepare('SELECT e.*, f.nom AS filiere FROM etudiants e LEFT JOIN filieres f ON e.filiere_id = f.id WHERE e.id = ?');
 $stmt->execute([$id]); $et = $stmt->fetch(PDO::FETCH_ASSOC);
-if (!$et) die('Étudiant introuvable');
+if (!$et) die('Etudiant introuvable');
 
 $docsStmt = $conn->prepare('SELECT type_document, fichier_path, uploaded_at FROM documents WHERE etudiant_id = ?');
 $docsStmt->execute([$id]); $docs = $docsStmt->fetchAll(PDO::FETCH_ASSOC);
@@ -26,14 +26,20 @@ include __DIR__ . '/../../includes/header.php';
 <div class="card">
 <h3>Informations</h3>
 <p><strong>Email:</strong> <?= htmlspecialchars($et['email']) ?></p>
-<p><strong>Téléphone:</strong> <?= htmlspecialchars($et['telephone']) ?></p>
-<p><strong>Filière:</strong> <?= htmlspecialchars($et['filiere']) ?></p>
+<p><strong>Telephone:</strong> <?= htmlspecialchars($et['telephone']) ?></p>
+<p><strong>Date de naissance:</strong> <?= htmlspecialchars($et['date_naissance'] ?? 'Non renseignee') ?></p>
+<p><strong>Filiere:</strong> <?= htmlspecialchars($et['filiere']) ?></p>
+<p><strong>Nationalite:</strong> <?= htmlspecialchars($et['nationalite'] ?? 'Non renseignee') ?></p>
+<p><strong>Ancienne ecole:</strong> <?= htmlspecialchars($et['ancien_ecole'] ?? 'Non renseigne') ?></p>
+<p><strong>Pays de residence:</strong> <?= htmlspecialchars($et['pays_residence'] ?? 'Non renseigne') ?></p>
+<p><strong>Niveau d'etude:</strong> <?= htmlspecialchars($et['niveau_etude'] ?? 'Non renseigne') ?></p>
+<p><strong>Parent/tuteur:</strong> <?= htmlspecialchars($et['parent_nom'] ?? 'Non renseigne') ?><?= $et['parent_contact'] ? ' - ' . htmlspecialchars($et['parent_contact']) : ' - Contact non renseigne' ?></p>
 <p><strong>Statut dossier:</strong> <?= htmlspecialchars($et['statut_dossier']) ?></p>
 <?php if ($et['motif_rejet']): ?><p><strong>Motif rejet:</strong> <?= htmlspecialchars($et['motif_rejet']) ?></p><?php endif; ?>
 </div>
 
 <div class="card">
-<h3>Documents envoyés</h3>
+<h3>Documents envoyes</h3>
 <?php if ($docs): ?>
 <table class="table">
 <tr><th>Type</th><th>Fichier</th><th>Date</th></tr>

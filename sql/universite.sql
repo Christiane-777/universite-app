@@ -1,4 +1,4 @@
--- Création de la base
+-- Creation de la base
 CREATE DATABASE IF NOT EXISTS universite_inscription;
 USE universite_inscription;
 
@@ -23,6 +23,12 @@ statut_dossier ENUM('incomplet', 'attente', 'valide', 'rejete') DEFAULT 'incompl
 motif_rejet TEXT NULL,
 created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
 date_naissance DATE NULL,
+nationalite VARCHAR(100) NOT NULL,
+ancien_ecole VARCHAR(150) NOT NULL,
+pays_residence VARCHAR(100) NOT NULL,
+niveau_etude TINYINT UNSIGNED NOT NULL,
+parent_nom VARCHAR(150) NULL,
+parent_contact VARCHAR(50) NULL,
 FOREIGN KEY (filiere_id) REFERENCES filieres(id) ON DELETE SET NULL
 );
 
@@ -58,17 +64,17 @@ password_hash VARCHAR(255) NOT NULL
 );
 
 
--- INSERTION DE FILIERES PAR DÉFAUT
+-- INSERTION DE FILIERES PAR DEFAUT
 INSERT INTO filieres (nom) VALUES
 ('Informatique'),
-('Génie Civil'),
+('Genie Civil'),
 ('Gestion'),
 ('Droit'),
-('Médecine'),
-('Économie');
+('Medecine'),
+('Economie');
 
 
--- COMPTE ADMIN PAR DÉFAUT
+-- COMPTE ADMIN PAR DEFAUT
 -- email : admin@univ.com
 -- mot de passe : admin123
 INSERT INTO admins (nom, email, password_hash) VALUES

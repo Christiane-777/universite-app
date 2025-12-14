@@ -18,14 +18,19 @@ $stmt->execute([$id]); $et = $stmt->fetch(PDO::FETCH_ASSOC);
 <section class="student-main">
 <div class="page-header">
 <h2>Mon profil</h2>
-<p>Vérifiez vos informations personnelles.</p>
+<p>Verifiez vos informations personnelles.</p>
 </div>
 <div class="card">
 <p><strong>Nom :</strong> <?= htmlspecialchars($et['nom']) ?></p>
-<p><strong>Prénom :</strong> <?= htmlspecialchars($et['prenom']) ?></p>
+<p><strong>Prenom :</strong> <?= htmlspecialchars($et['prenom']) ?></p>
 <p><strong>Email :</strong> <?= htmlspecialchars($et['email']) ?></p>
-<p><strong>Téléphone :</strong> <?= htmlspecialchars($et['telephone']) ?></p>
-<p><strong>Filière :</strong> <?= htmlspecialchars($et['filiere'] ?? 'Non renseignée') ?></p>
+<p><strong>Telephone :</strong> <?= htmlspecialchars($et['telephone']) ?></p>
+<p><strong>Filiere :</strong> <?= htmlspecialchars($et['filiere'] ?? 'Non renseignee') ?></p>
+<p><strong>Nationalite :</strong> <?= htmlspecialchars($et['nationalite'] ?? 'Non renseignee') ?></p>
+<p><strong>Ancienne ecole :</strong> <?= htmlspecialchars($et['ancien_ecole'] ?? 'Non renseigne') ?></p>
+<p><strong>Pays de residence :</strong> <?= htmlspecialchars($et['pays_residence'] ?? 'Non renseigne') ?></p>
+<p><strong>Niveau d'etude :</strong> <?= htmlspecialchars($et['niveau_etude'] ?? 'Non renseigne') ?></p>
+<p><strong>Parent / Tuteur :</strong> <?= htmlspecialchars($et['parent_nom'] ?? 'Non renseigne') ?> - <?= htmlspecialchars($et['parent_contact'] ?? 'Contact non renseigne') ?></p>
 </div>
 </section>
 </div>

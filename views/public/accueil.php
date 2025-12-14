@@ -1,160 +1,545 @@
-<?php
-$BASE_PATH = 'http://localhost/universite-app';
-?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Univ</title>
-    <link rel="stylesheet" href="<?=$BASE_PATH?>/assets/css/stylea.css">
-</head>
-<body>
-    <header>
-        
-        <nav>
-            <a href="#">ACCUEIL</a>
-            <a href="#">A PROPOS</a>
-            <a href="#">SERVICES</a>
-            <a href="#">CATEGORIES</a>
-            <a href="<?= $BASE_PATH ?>/views/public/login.php">PORTAIL</a>
-            <a href="#">CONTACT</a>
-        </nav>
-    </header>
-    <section class="baniere" id="baniere">
-        <div class="contenu">
-            <h1>Développez votre <span>expertise </span>, <span>programmez </span> votre avenir !</h1>
-            <h5>Avec <span>Code Conquest university</span>, formez-vous dans les technologies du numérique et devenez expert dans les domaines qui vous passionnent.</h5>
-        </div>
-    </section>
+<?php include __DIR__ . '/../../includes/head.php'; ?>
 
-    <section class="row">
-        
-        <div class="row-2">
-            <h2><span>A</span> PROPOS</h2>
-            <p>
-                Avec Code conquest university, tu construis ton parcours en fonction de ce que tu veux faire, avec des formations qui s’adaptent à ton niveau, à ton rythme et surtout à tes ambitions.
-Du post Bac au Bac+5, on te forme sur les technos et les métiers qui bougent, avec des diplômes d’État et européens reconnus, que tu partes sur du dev / du réseau / de la data / de la cybersécurité ou de la gestion de projets IT.
-Tout ce que tu apprends, c’est du concret et directement connecté aux outils et aux usages pros d’aujourd’hui…et de demain !
-            </p>
+    <!-- Hero Start -->
+    <div class="container-fluid bg-primary py-5 mb-5 hero-header">
+        <div class="container py-5">
+            <div class="row justify-content-start">
+                <div class="col-lg-8 text-center text-lg-start">
+                    <h1 class="font-secondary text-primary mb-4"></h1>
+                    <h1 class="display-1 text-uppercase text-white mb-4">Code Conquest University</h1>
+                    <h1 class="text-uppercase text-white">The Best</h1>
+                    <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
+                        <a href="" class="btn btn-primary border-inner py-3 px-5 me-5">Read More</a>
+                        <button type="button" class="btn-play" data-bs-toggle="modal"
+                            data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
+                            <span></span>
+                        </button>
+                        <h5 class="font-weight-normal text-white m-0 ms-4 d-none d-sm-block">Play Video</h5>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="row-1">
-            
-            <img src="<?=$BASE_PATH?>/assets/img/img1.jpg" alt="" width="600px" height="550px">
-            
-        </div>
-        
-        
-    </section>
-<section class="cata">
-        <h2><span>N</span>os <span>F</span>ormations</h2>
-        <div class="categorie">
-        <div class="cate">
-            <img src="<?=$BASE_PATH?>/assets/img/plat1.png" alt="">
-            <h3>BTS Services Informatiques aux organisations</h3>
-            <p>forme en deux ans des techniciens capables de développer des applications ou gérer des réseaux et systémes informatiques au sein des entreprises.</p>
-        </div>
-
-        <div class="cate">
-            <img src="<?=$BASE_PATH?>/assets/img/plat2.png" alt="">
-            <h3>Bachelor Ingénierie Cybersécurité - Cloud- Infrastructures Sécurisées</h3>
-            <p>forme en un an des professionnels capables d'administrer, de sécuriser et de piloter de infrstructures informatiques et cloud</p>
-        </div>
-
-        <div class="cate">
-            <img src="<?=$BASE_PATH?>/assets/img/plat3.png" alt="">
-            <h3>Bachelor Concepteur Développeur Full Stack</h3>
-            <p>forme en un an des professionnels capables de concevoir, développer et maintenir des applications web ou mobiles complètes, en maitrisant à la fois le front-end et le back-end</p>
-        </div>
-
-        <div class="cate">
-            <img src="<?=$BASE_PATH?>/assets/img/plat4.png" alt="">
-            <h3>Mastère Expert Cybersécurité Cloud Computing </h3>
-            <p>forme en deux ans des spécialistes capables de concevoir, sécuriser et piloter des architectures informatques et cloud</p>
-        </div>
-
-        <div class="cate">
-            <img src="<?=$BASE_PATH?>/assets/img/plat5.png" alt="">
-            <h3>Mastère Expert Lead Développeur Full stack</h3>
-            <p>forme en deux ans des experts capables de concevoir, piloter et sécuriser des projets web et mobiles complexes</p>
-        </div>
-
-        
     </div>
-    </section>
-    <section class="cata">
-        <h2><span>P</span>aroles <span>D</span> 'étudiants</h2>
-        <p>
-            Ce sont les étudiants qui nous parlent le mieux
-        </p>
-        <div class="serv">
-        <div class="services">
-            <h3>Youssef Arnold : M1 LEAD DEV FULLSTACK</h3>
-            <p>J'ai vraiment aimé la pédagogie mise en place cette année; grace au programme structuré et enrichissant proposé par Francois Hervé</p>
-        </div>
+    <!-- Hero End -->
 
-        <div class="services">
-            <h3>Ramaya fatim: BACH CDA</h3>
-            <p>J'ai vraiment aimé la pédagogie mise en place cette année; grace au programme structuré et enrichissant proposé par Francois Hervé</p>
-        </div>
-        
 
-        <div class="services">
-            <h3>Hakim mané: BTS SIO</h3>
-            <p>J'ai vraiment aimé la pédagogie mise en place cette année; grace au programme structuré et enrichissant proposé par Francois Hervé</p>
+    <!-- Video Modal Start -->
+    <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Youtube Video</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- 16:9 aspect ratio -->
+                    <div class="ratio ratio-16x9">
+                        <iframe class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="always"
+                            allow="autoplay"></iframe>
+                    </div>
+                </div>
+            </div>
         </div>
-        
-
-        <div class="services">
-            <h3>Hassan Mballa: BTS SIO</h3>
-            <p>J'ai vraiment aimé la pédagogie mise en place cette année; grace au programme structuré et enrichissant proposé par Francois Hervé</p>
-        </div>
-        </div>
-
-        
     </div>
-    </section>
+    <!-- Video Modal End -->
 
+
+    <!-- About Start -->
+    <div class="container-fluid pt-5">
+        <div class="container">
+            <div class="section-title position-relative text-center mx-auto mb-5 pb-3" style="max-width: 600px;">
+                <h2 class="text-primary font-secondary">About Us</h2>
+                <h1 class="display-4 text-uppercase">Welcome To Code Conquest</h1>
+            </div>
+            <div class="row gx-5">
+                <div class="col-lg-5 mb-5 mb-lg-0" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute w-100 h-100" src="<?= $BASE_PATH ?>/assets/img/about.jpg" style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-6 pb-5">
+                    <h4 class="mb-4">Tempor erat elitr rebum clita. Diam dolor diam ipsum erat lorem sed stet labore lorem sit clita duo</h4>
+                    <p class="mb-5">Tempor erat elitr at rebum at at clita. Diam dolor diam ipsum et tempor sit. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna dolore erat amet magna</p>
+                    <div class="row g-5">
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center justify-content-center bg-primary border-inner mb-4" style="width: 90px; height: 90px;">
+                                <i class="fa fa-heartbeat fa-2x text-white"></i>
+                            </div>
+                            <h4 class="text-uppercase">100% Healthy</h4>
+                            <p class="mb-0">Labore justo vero ipsum sit clita erat lorem magna clita nonumy dolor magna dolor vero</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center justify-content-center bg-primary border-inner mb-4" style="width: 90px; height: 90px;">
+                                <i class="fa fa-award fa-2x text-white"></i>
+                            </div>
+                            <h4 class="text-uppercase">Award Winning</h4>
+                            <p class="mb-0">Labore justo vero ipsum sit clita erat lorem magna clita nonumy dolor magna dolor vero</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Facts Start -->
+    <div class="container-fluid bg-img py-5 mb-5">
+        <div class="container py-5">
+            <div class="row gx-5 gy-4">
+                <div class="col-lg-3 col-md-6">
+                    
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="d-flex">
+                        <div class="bg-primary border-inner d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                            <i class="fa fa-users text-white"></i>
+                        </div>
+                        <div class="ps-4">
+                            <h6 class="text-primary text-uppercase">Success in the exam</h6>
+                            <h1 class="display-5 text-white mb-0" ><span data-toggle="counter-up">85</span>%</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="d-flex">
+                        <div class="bg-primary border-inner d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                            <i class="fa fa-check text-white"></i>
+                        </div>
+                        <div class="ps-4">
+                            <h6 class="text-primary text-uppercase">Partner universities around the world</h6>
+                            <h1 class="display-5 text-white mb-0" data-toggle="counter-up">42</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="d-flex">
+                        <div class="bg-primary border-inner d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                            <i class="fa fa-mug-hot text-white"></i>
+                        </div>
+                        <div class="ps-4">
+                            <h6 class="text-primary text-uppercase">Host compagnies</h6>
+                            <h1 class="display-5 text-white mb-0" data-toggle="counter-up">243</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Facts End -->
+
+
+    <!-- Programs Start -->
+    <div class="container-fluid about py-5">
+        <div class="container">
+            <div class="section-title position-relative text-center mx-auto mb-5 pb-3" style="max-width: 600px;">
+                <h2 class="text-primary font-secondary">our programs</h2>
+                <h1 class="display-4 text-uppercase">Explore your passion</h1>
+            </div>
+            <div class="tab-class text-center">
+                <ul class="nav nav-pills d-inline-flex justify-content-center bg-dark text-uppercase border-inner p-4 mb-5">
+                    <li class="nav-item">
+                        <a class="nav-link text-white active" data-bs-toggle="pill" href="#tab-1">HND</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" data-bs-toggle="pill" href="#tab-2">BACHELOR</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" data-bs-toggle="pill" href="#tab-3">MASTER'S DEGREE</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div id="tab-1" class="tab-pane fade show p-0 active">
+                        <div class="row g-3">
+                            <div class="col-lg-6">
+                                <div class="d-flex h-100">
+                                    <div class="flex-shrink-0">
+                                        <img class="img-fluid" src="<?= $BASE_PATH ?>/assets/img/cake-1.jpg" alt="" style="width: 150px; height: 85px;">
+                                        <h4 class="bg-dark text-primary p-2 m-0"></h4>
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
+                                        <h5 class="text-uppercase">HND</h5>
+                                        <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex h-100">
+                                    <div class="flex-shrink-0">
+                                        <img class="img-fluid" src="<?= $BASE_PATH ?>/assets/img/cake-1.jpg" alt="" style="width: 150px; height: 85px;">
+                                        <h4 class="bg-dark text-primary p-2 m-0"></h4>
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
+                                        <h5 class="text-uppercase">HND</h5>
+                                        <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                            
+                            <div class="col-lg-6">
+                                <div class="d-flex h-100">
+                                    <div class="flex-shrink-0">
+                                        <img class="img-fluid" src="<?= $BASE_PATH ?>/assets/img/cake-1.jpg" alt="" style="width: 150px; height: 85px;">
+                                        <h4 class="bg-dark text-primary p-2 m-0"></h4>
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
+                                        <h5 class="text-uppercase">HND</h5>
+                                        <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex h-100">
+                                    <div class="flex-shrink-0">
+                                        <img class="img-fluid" src="<?= $BASE_PATH ?>/assets/img/cake-1.jpg" alt="" style="width: 150px; height: 85px;">
+                                        <h4 class="bg-dark text-primary p-2 m-0"></h4>
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
+                                        <h5 class="text-uppercase">HND</h5>
+                                        <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab-2" class="tab-pane fade show p-0">
+                        <div class="row g-3">
+                            <div class="col-lg-6">
+                                <div class="d-flex h-100">
+                                    <div class="flex-shrink-0">
+                                        <img class="img-fluid" src="<?= $BASE_PATH ?>/assets/img/cake-2.jpg" alt="" style="width: 150px; height: 85px;">
+                                        <h4 class="bg-dark text-primary p-2 m-0"></h4>
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
+                                        <h5 class="text-uppercase">BACHELOR</h5>
+                                        <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex h-100">
+                                    <div class="flex-shrink-0">
+                                        <img class="img-fluid" src="<?= $BASE_PATH ?>/assets/img/cake-2.jpg" alt="" style="width: 150px; height: 85px;">
+                                        <h4 class="bg-dark text-primary p-2 m-0"></h4>
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
+                                        <h5 class="text-uppercase">BACHELOR</h5>
+                                        <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex h-100">
+                                    <div class="flex-shrink-0">
+                                        <img class="img-fluid" src="<?= $BASE_PATH ?>/assets/img/cake-2.jpg" alt="" style="width: 150px; height: 85px;">
+                                        <h4 class="bg-dark text-primary p-2 m-0"></h4>
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
+                                        <h5 class="text-uppercase">BACHELOR</h5>
+                                        <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex h-100">
+                                    <div class="flex-shrink-0">
+                                        <img class="img-fluid" src="<?= $BASE_PATH ?>/assets/img/cake-2.jpg" alt="" style="width: 150px; height: 85px;">
+                                        <h4 class="bg-dark text-primary p-2 m-0"></h4>
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
+                                        <h5 class="text-uppercase">BACHELOR</h5>
+                                        <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex h-100">
+                                    <div class="flex-shrink-0">
+                                        <img class="img-fluid" src="<?= $BASE_PATH ?>/assets/img/cake-2.jpg" alt="" style="width: 150px; height: 85px;">
+                                        <h4 class="bg-dark text-primary p-2 m-0"></h4>
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
+                                        <h5 class="text-uppercase">BACHELOR</h5>
+                                        <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex h-100">
+                                    <div class="flex-shrink-0">
+                                        <img class="img-fluid" src="<?= $BASE_PATH ?>/assets/img/cake-2.jpg" alt="" style="width: 150px; height: 85px;">
+                                        <h4 class="bg-dark text-primary p-2 m-0"></h4>
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
+                                        <h5 class="text-uppercase">BACHELOR</h5>
+                                        <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab-3" class="tab-pane fade show p-0">
+                        <div class="row g-3">
+                            <div class="col-lg-6">
+                                <div class="d-flex h-100">
+                                    <div class="flex-shrink-0">
+                                        <img class="img-fluid" src="<?= $BASE_PATH ?>/assets/img/cake-3.jpg" alt="" style="width: 150px; height: 85px;">
+                                        <h4 class="bg-dark text-primary p-2 m-0"></h4>
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
+                                        <h5 class="text-uppercase">MASTER'S DEGREE</h5>
+                                        <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex h-100">
+                                    <div class="flex-shrink-0">
+                                        <img class="img-fluid" src="<?= $BASE_PATH ?>/assets/img/cake-3.jpg" alt="" style="width: 150px; height: 85px;">
+                                        <h4 class="bg-dark text-primary p-2 m-0"></h4>
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
+                                        <h5 class="text-uppercase">MASTER'S DEGREE</h5>
+                                        <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex h-100">
+                                    <div class="flex-shrink-0">
+                                        <img class="img-fluid" src="<?= $BASE_PATH ?>/assets/img/cake-3.jpg" alt="" style="width: 150px; height: 85px;">
+                                        <h4 class="bg-dark text-primary p-2 m-0"></h4>
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
+                                        <h5 class="text-uppercase">MASTER'S DEGREE</h5>
+                                        <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex h-100">
+                                    <div class="flex-shrink-0">
+                                        <img class="img-fluid" src="<?= $BASE_PATH ?>/assets/img/cake-3.jpg" alt="" style="width: 150px; height: 85px;">
+                                        <h4 class="bg-dark text-primary p-2 m-0"></h4>
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
+                                        <h5 class="text-uppercase">MASTER'S DEGREE</h5>
+                                        <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex h-100">
+                                    <div class="flex-shrink-0">
+                                        <img class="img-fluid" src="<?= $BASE_PATH ?>/assets/img/cake-3.jpg" alt="" style="width: 150px; height: 85px;">
+                                        <h4 class="bg-dark text-primary p-2 m-0"></h4>
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
+                                        <h5 class="text-uppercase">MASTER'S DEGREE</h5>
+                                        <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex h-100">
+                                    <div class="flex-shrink-0">
+                                        <img class="img-fluid" src="<?= $BASE_PATH ?>/assets/img/cake-3.jpg" alt="" style="width: 150px; height: 85px;">
+                                        <h4 class="bg-dark text-primary p-2 m-0"></h4>
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
+                                        <h5 class="text-uppercase">MASTER'S DEGREE</h5>
+                                        <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Products End -->
+
+
+    <!-- Service Start -->
+    <div class="container-fluid service position-relative px-5 mt-5" style="margin-bottom: 135px;">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-6">
+                    <div class="bg-primary border-inner text-center text-white p-5">
+                        <h4 class="text-uppercase mb-3">HND</h4>
+                        <p>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo amet tempor amet kasd lorem dolor ipsum</p>
+                        <a class="text-uppercase text-dark" href="">Read More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="bg-primary border-inner text-center text-white p-5">
+                        <h4 class="text-uppercase mb-3">BACHELOR</h4>
+                        <p>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo amet tempor amet kasd lorem dolor ipsum</p>
+                        <a class="text-uppercase text-dark" href="">Read More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="bg-primary border-inner text-center text-white p-5">
+                        <h4 class="text-uppercase mb-3">MASTER'S DEGREE</h4>
+                        <p>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo amet tempor amet kasd lorem dolor ipsum</p>
+                        <a class="text-uppercase text-dark" href="">Read More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-6 text-center">
+                    <h1 class="text-uppercase text-light mb-4">upcoming events</h1>
+                    <a href="" class="btn btn-primary border-inner py-3 px-5">back to school</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service Start -->
+
+
+    <!-- Team Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="section-title position-relative text-center mx-auto mb-5 pb-3" style="max-width: 600px;">
+                <h2 class="text-primary font-secondary">Team Members</h2>
+                <h1 class="display-4 text-uppercase">The code conquest team</h1>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-6">
+                    <div class="team-item">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="<?= $BASE_PATH ?>/assets/img/team-1.jpg" alt="">
+                            <div class="team-overlay w-100 h-100 position-absolute top-50 start-50 translate-middle d-flex align-items-center justify-content-center">
+                                <div class="d-flex align-items-center justify-content-start">
+                                    <a class="btn btn-lg btn-primary btn-lg-square border-inner rounded-0 mx-1" href="#"><i class="fab fa-twitter fw-normal"></i></a>
+                                    <a class="btn btn-lg btn-primary btn-lg-square border-inner rounded-0 mx-1" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
+                                    <a class="btn btn-lg btn-primary btn-lg-square border-inner rounded-0 mx-1" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-dark border-inner text-center p-4">
+                            <h4 class="text-uppercase text-primary">tchiengang ivan</h4>
+                            <p class="text-white m-0">Code conquest director</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="team-item">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="<?= $BASE_PATH ?>/assets/img/team-2.jpg" alt="" height="500PX">
+                            <div class="team-overlay w-100 h-100 position-absolute top-50 start-50 translate-middle d-flex align-items-center justify-content-center">
+                                <div class="d-flex align-items-center justify-content-start">
+                                    <a class="btn btn-lg btn-primary btn-lg-square border-inner rounded-0 mx-1" href="#"><i class="fab fa-twitter fw-normal"></i></a>
+                                    <a class="btn btn-lg btn-primary btn-lg-square border-inner rounded-0 mx-1" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
+                                    <a class="btn btn-lg btn-primary btn-lg-square border-inner rounded-0 mx-1" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-dark border-inner text-center p-4">
+                            <h4 class="text-uppercase text-primary">bengono jacques</h4>
+                            <p class="text-white m-0">Academique director</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="team-item">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="<?= $BASE_PATH ?>/assets/img/team-3.jpg" alt="" height="500PX">
+                            <div class="team-overlay w-100 h-100 position-absolute top-50 start-50 translate-middle d-flex align-items-center justify-content-center">
+                                <div class="d-flex align-items-center justify-content-start">
+                                    <a class="btn btn-lg btn-primary btn-lg-square border-inner rounded-0 mx-1" href="#"><i class="fab fa-twitter fw-normal"></i></a>
+                                    <a class="btn btn-lg btn-primary btn-lg-square border-inner rounded-0 mx-1" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
+                                    <a class="btn btn-lg btn-primary btn-lg-square border-inner rounded-0 mx-1" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-dark border-inner text-center p-4">
+                            <h4 class="text-uppercase text-primary">nang lorenne</h4>
+                            <p class="text-white m-0">Educational manager</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+
+    <!-- Offer Start -->
+    <div class="container-fluid bg-offer my-5 py-5">
+        <div class="container py-5">
+            <div class="row gx-5 justify-content-center">
+                <div class="col-lg-7 text-center">
+                    <div class="section-title position-relative text-center mx-auto mb-4 pb-3" style="max-width: 600px;">
+                        <h2 class="text-primary font-secondary">Are you a company ?</h2>
+                        <h1 class="display-4 text-uppercase text-white">Discover our talents</h1>
+                    </div>
+                    <p class="text-white mb-4">Eirmod sed tempor lorem ut dolores sit kasd ipsum. Dolor ea et dolore et at sea ea at dolor justo ipsum duo rebum sea. Eos vero eos vero ea et dolore eirmod et. Dolores diam duo lorem. Elitr ut dolores magna sit. Sea dolore sed et.</p>
+                    <a href="" class="btn btn-primary border-inner py-3 px-5 me-3">Recuit</a>
+                    <a href="" class="btn btn-dark border-inner py-3 px-5">Join us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Offer End -->
+
+
+    <!-- Testimonial Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="section-title position-relative text-center mx-auto mb-5 pb-3" style="max-width: 600px;">
+                <h2 class="text-primary font-secondary">students voice</h2>
+                <h1 class="display-4 text-uppercase">Our students Say!!!</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel">
+                <div class="testimonial-item bg-dark text-white border-inner p-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <img class="img-fluid flex-shrink-0" src="<?= $BASE_PATH ?>/assets/img/testimonial-1.jpg" style="width: 60px; height: 60px;">
+                        <div class="ps-3">
+                            <h4 class="text-primary text-uppercase mb-1">lorette james</h4>
+                            <span>Master's degree in AI</span>
+                        </div>
+                    </div>
+                    <p class="mb-0">Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
+                    </p>
+                </div>
+                <div class="testimonial-item bg-dark text-white border-inner p-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <img class="img-fluid flex-shrink-0" src="<?= $BASE_PATH ?>/assets/img/testimonial-2.jpg" style="width: 60px; height: 60px;">
+                        <div class="ps-3">
+                            <h4 class="text-primary text-uppercase mb-1">florine kamdem</h4>
+                            <span>HND in cybersecurity</span>
+                        </div>
+                    </div>
+                    <p class="mb-0">Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
+                    </p>
+                </div>
+                <div class="testimonial-item bg-dark text-white border-inner p-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <img class="img-fluid flex-shrink-0" src="<?= $BASE_PATH ?>/assets/img/testimonial-3.jpg" style="width: 60px; height: 60px;">
+                        <div class="ps-3">
+                            <h4 class="text-primary text-uppercase mb-1">ARMANT Brant</h4>
+                            <span>Bachelor in sotfware engineering.</span>
+                        </div>
+                    </div>
+                    <p class="mb-0">Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
+                    </p>
+                </div>
+                <div class="testimonial-item bg-dark text-white border-inner p-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <img class="img-fluid flex-shrink-0" src="<?= $BASE_PATH ?>/assets/img/testimonial-4.jpg" style="width: 60px; height: 60px;">
+                        <div class="ps-3">
+                            <h4 class="text-primary text-uppercase mb-1">simo charles</h4>
+                            <span>Bachelor in fullstack development.</span>
+                        </div>
+                    </div>
+                    <p class="mb-0">Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
     
-
-    <section class="contact">
-        <h2><span>C</span>ONTACTEZ <span>N</span>OUS</h2>
-        <div class="form">
-            <form action="">
-                <label for="Nom">Nom</label>
-                <input type="text" id="nom" name="nom" required>
-                
-                <label for="e-mail">Adresse e-mail</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="sujet">Sujet</label>
-                <input type="text" name="subjet" id="subject" required>
-
-                <label for="message">Message</label>
-                <textarea name="message" id="message" rows="10">Ecrivez votre message...</textarea>
-
-                <button type="submit">Envoyer</button>
-
-            </form>
-       
-
-        <div class="lien">
-            <h3>Suivez-nous</h3>
-            <a href="#">X</a>
-            <a href="#">Facebook</a>
-            <a href="#">Instagram</a>
-            <a href="#">Whatsapp</a>
-        </div>
-
-        <div class="footer">
-            <p>Email : kamdoumchanl82@gmail.com</p>
-            <p>Téléphone : 6 91 95 49 14</p>
-            <p>Adresse : Biyem-assi(Rue des coctiers), Yaoundé, Cameroun</p>
-            <p><a href="#">Politique de confidentialité</a></p>
-        </div>
-    </div>
-    </section>
-
-    <footer>Copy right</footer>
-</body>
-</html>
+<?php include __DIR__ . '/../../includes/foot.php'; ?>
