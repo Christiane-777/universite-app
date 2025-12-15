@@ -23,7 +23,7 @@ It also provides an **administrator dashboard** where administrators can **recei
 ---
 
 ## Technologies used 
-- **Frontend**: HTML, CSS, Javascript
+- **Frontend**: HTML, CSS, SCSS, Javascript
 - **Backend**: PHP
 - **Local server**: WAMP Server
 - **Database**: Mysql
